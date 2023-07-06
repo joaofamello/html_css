@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seila</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            
             height: 100vh;
-            background-color: black;
+          /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*shrothand - background
+            color > image > position > repeat > [size] > attachment
+            size ainda não funciona*/
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.274);
         }
     </style>
 </head>
